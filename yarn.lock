@@ -132,11 +132,6 @@ https-proxy-agent@^5.0.0:
     agent-base "6"
     debug "4"
 
-jose@^4.8.0:
-  version "4.11.1"
-  resolved "https://artifactory.rsglab.com:443/artifactory/api/npm/npm/jose/-/jose-4.11.1.tgz#8f7443549befe5bddcf4bae664a9cbc1a62da4fa"
-  integrity sha1-j3RDVJvv5b3c9LrmZKnLwaYtpPo=
-
 jsonwebtoken@^8.5.1:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
@@ -209,15 +204,6 @@ lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
-
-messagebird@^3.8.1:
-  version "3.8.1"
-  resolved "https://artifactory.rsglab.com:443/artifactory/api/npm/npm/messagebird/-/messagebird-3.8.1.tgz#88442536363a4d96440f0aea34cdbc500370c677"
-  integrity sha1-iEQlNjY6TZZEDwrqNM28UANwxnc=
-  dependencies:
-    jose "^4.8.0"
-    safe-buffer "^5.2.1"
-    scmp "^2.1.0"
 
 mime-db@1.52.0:
   version "1.52.0"
@@ -299,7 +285,7 @@ rootpath@^0.1.2:
   resolved "https://registry.yarnpkg.com/rootpath/-/rootpath-0.1.2.tgz#5b379a87dca906e9b91d690a599439bef267ea6b"
   integrity sha512-R3wLbuAYejpxQjL/SjXo1Cjv4wcJECnMRT/FlcCfTwCBhaji9rWaRCoVEQ1SPiTJ4kKK+yh+bZLAV7SCafoDDw==
 
-safe-buffer@^5.0.1, safe-buffer@^5.2.1:
+safe-buffer@^5.0.1:
   version "5.2.1"
   resolved "https://artifactory.rsglab.com:443/artifactory/api/npm/npm/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
