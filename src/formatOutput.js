@@ -5,7 +5,7 @@ function formatOutput(forecast, location) {
   let nextWeek = 0,
     nextTwoWeeks = 0;
   forecast.forEach((day, i) => {
-    const snowDepth = Math.round(day.snow * 100) / 100;
+    const snowDepth = day.snow;
     if (i < 7) {
       nextWeek += snowDepth;
       nextTwoWeeks += snowDepth;
@@ -15,7 +15,7 @@ function formatOutput(forecast, location) {
     }
   });
 
-  const tomorrow = Math.round(forecast[0].snow * 100) / 100;
+  const tomorrow = forecast[0].snow;
   const output = formatMessage(tomorrow, nextWeek, nextTwoWeeks, location);
   return output;
 }
@@ -23,9 +23,9 @@ function formatOutput(forecast, location) {
 const formatMessage = (tomorrow, nextWeek, nextTwoWeeks, location) => {
   const message =
     `--\nSnowcast ${location ? `for ${location}` : ""}:\n` +
-    `Tomorrow  - ${tomorrow} inches\n` +
-    `7 days    - ${nextWeek} inches\n` +
-    `14 weeks  - ${nextTwoWeeks} inches\n`;
+    `Tomorrow  - ${tomorrow.toFixed(2)} inches\n` +
+    `7 days    - ${nextWeek.toFixed(2)} inches\n` +
+    `14 weeks  - ${nextTwoWeeks.toFixed(2)} inches\n`;
   return message;
 };
 
